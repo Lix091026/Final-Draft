@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>精美壁纸展示</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>精美壁纸展示</h1>
+        <div class="theme-switch">
+            <i class="fas fa-moon"></i>
+        </div>
+    </header>
+
+    <main>
+        <section class="gallery-section">
+            <h2>精选壁纸</h2>
+            <div class="gallery-container">
+                <div class="gallery-category" id="category1">
+                    <h3>自然风景</h3>
+                    <div class="gallery-grid" id="gallery1">
+                        <!-- 图片将通过JavaScript动态加载 -->
+                    </div>
+                    <button class="view-more" data-category="t1">查看更多</button>
+                </div>
+
+                <div class="gallery-category" id="category2">
+                    <h3>城市风光</h3>
+                    <div class="gallery-grid" id="gallery2">
+                        <!-- 图片将通过JavaScript动态加载 -->
+                    </div>
+                    <button class="view-more" data-category="t2">查看更多</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 弹出框 -->
+    <div class="modal" id="imageModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-gallery">
+                <!-- 图片将通过JavaScript动态加载 -->
+            </div>
+            <div class="modal-controls">
+                <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 壁纸展示网站. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
